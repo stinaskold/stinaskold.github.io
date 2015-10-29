@@ -5,16 +5,14 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|EB+Garamond);
 
 header[role=banner] {
-  margin: 0;
-  padding: 0;
-  height: 10%;
+  height:5%;
   background-image: url("../img/zen_header_bild.jpg");
-  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%), url("../img/zen_header_bild.jpg"); /* FF3.6+ */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(80%,rgba(255,255,255,1))), url("../img/zen_header_bild.jpg"); /* Chrome,Safari4+ */
-  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%), url("../img/zen_header_bild.jpg"); /* Chrome10+,Safari5.1+ */
-  background-image: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%), url("../img/zen_header_bild.jpg"); /* Opera 11.10+ */
-  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%), url("../img/zen_header_bild.jpg"); /* IE10+ */
-  background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 80%), url("../img/zen_header_bild.jpg"); /* W3C */
+  background-image: -moz-linear-gradient(top,  rgba(255,255,255,0) 30%, rgba(255,255,255,1) 85%), url("../img/zen_header_bild.jpg"); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255,255,255,0)), color-stop(85%,rgba(255,255,255,1))), url("../img/zen_header_bild.jpg"); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%), url("../img/zen_header_bild.jpg"); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top,  rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%), url("../img/zen_header_bild.jpg"); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top,  rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%), url("../img/zen_header_bild.jpg"); /* IE10+ */
+  background-image: linear-gradient(to bottom,  rgba(255,255,255,0) 30%,rgba(255,255,255,1) 85%), url("../img/zen_header_bild.jpg"); /* W3C */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,16 +22,108 @@ h1 {
   text-transform: uppercase;
   font-family: 'PT Sans Caption', sans-serif;
   font-size:8.4375em;
-  padding-top: 5%;
-  margin: 0 auto;
+  padding-top: 2%;
+  margin: 0;
   text-align: center;
   color: #adc654;
   opacity: 0.7;
 }
+
 h2 {
   color: #4e5850;
   text-align: center;
   font-size: 4em;
   font-family: 'EB Garamond', serif;
   font-style: italic;
+  font-weight: bolder;
+  margin-bottom: 1%;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.875em;
+  color: #333;
+}
+
+.summary {
+  color: #686868;
+  text-align: center;
+}
+
+.summary a {
+  font-weight: bold;
+  color: #686868;
+}
+
+.preamble {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5% 0;
+
+}
+
+.preamble p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  color: #686868;
+}
+
+.preamble h3 {
+  color: #adc654;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2.375em;
+}
+
+.main {
+  background-image: url("../img/zen_bild_2.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  color: #fff;
+  margin: 0 auto;
+  border-top: 14px solid #adc654;
+  min-height: 420px;
+}
+.main p {
+  color: #fff;
+}
+.main h3 {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1.8em;
+}
+
+.explanation, .participation, .benefits, .requirements {
+  width: 26.66%;
+  float: left;
+  padding: 0;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.explanation, .participation, .benefits  {
+  padding-left: 5%;
+}
+
+.benefits {
+  padding-right: 5%;
+}
+
+.requirements, .main footer  {
+  clear: both;
+  width: 100%;
+  background-color: #ccc;
+}
+.requirements {
+  border-top: 14px solid #fff;
+}
+
+
+@media screen and (max-width: 1112px) {
+  h1 {
+    font-size: 7em;
+  }
 }
