@@ -36,31 +36,42 @@ h2 {
   font-family: 'EB Garamond', serif;
   font-style: italic;
   font-weight: bolder;
-  margin-bottom: 1%;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.05em;
 }
 
 p {
   font-family: 'PT Sans', sans-serif;
   font-size: 0.875em;
-  color: #333;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .summary {
   color: #686868;
   text-align: center;
+  line-height: 0.5em;
 }
 
 .summary a {
-  font-weight: bold;
   color: #686868;
 }
 
 .preamble {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 5% 0;
-
+  text-align: justify;
+  padding: 0 25% 0 25%;
+  margin: 100px 5% 100px 5%;
+  background-image: url("../img/ornament_left.png"), url("../img/ornament_right.png");
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: 20%;
 }
 
 .preamble p {
@@ -68,12 +79,18 @@ p {
   font-size: 1.3em;
   line-height: 1.4em;
   color: #686868;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1.4em;
 }
 
 .preamble h3 {
   color: #adc654;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 2.375em;
+  margin-bottom: 0.8em;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .main {
@@ -88,20 +105,28 @@ p {
 }
 .main p {
   color: #fff;
+  text-align: justify;
 }
 .main h3 {
   font-family: 'EB Garamond', serif;
   font-style: italic;
   font-weight: lighter;
   font-size: 1.8em;
+  letter-spacing: 0.05em;
 }
 
-.explanation, .participation, .benefits, .requirements {
+.main a {
+  color: #adc654;
+}
+
+
+.explanation, .participation, .benefits {
   width: 26.66%;
   float: left;
   padding: 0;
   padding-top: 2%;
   padding-bottom: 3%;
+  line-height: 1.4em;
 }
 
 .explanation, .participation, .benefits  {
@@ -115,15 +140,63 @@ p {
 .requirements, .main footer  {
   clear: both;
   width: 100%;
-  background-color: #ccc;
+  background-color: #adc654;
+  text-align: center;
 }
 .requirements {
   border-top: 14px solid #fff;
+  color: #4e5850;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.requirements p, .main footer a {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  line-height: 1.4em;
+  color: #4e5850;
+  margin: 0 auto 1.4em auto;
+  padding-left: 25%;
+  padding-right: 25%;
+  max-width: 800px;
 }
 
+.requirements a, .main footer a {
+  color: #404741;
+  font-weight: bold;
+}
+
+.main footer a {
+  padding: 0;
+  padding-bottom: 5%;
+}
+
+.requirements h3 {
+font-family: 'PT Sans Narrow', sans-serif;
+font-size: 2.375em;
+font-weight: bold;
+font-style: normal;
+margin-bottom: 0.8em;
+letter-spacing: 0.02em;
+text-align: center;
+}
 
 @media screen and (max-width: 1112px) {
   h1 {
     font-size: 7em;
+
   }
+  .preamble {
+    background-image: none;
+    padding: 0 10% 0 10%;
+  }
+
+}
+
+@media screen and (min-width: 2020px) {
+  .preamble {
+    background-size: 16%;
+  }
+
 }
