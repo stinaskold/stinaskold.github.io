@@ -5,18 +5,18 @@ Importing normalize.css
 @import url("normalize.css");
 
 /*************************************************************
-Importing Google fonts
-*************************************************************/
-
-@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|EB+Garamond");
-
-/*************************************************************
 Page-width
 *************************************************************/
 
 .page-wrapper {
   width:100%;
 }
+
+/*************************************************************
+Importing Google fonts
+*************************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|EB+Garamond");
 
 /*************************************************************
 Basic element styles
@@ -282,6 +282,7 @@ Archives and resources styles
   font-family: 'PT Sans', sans-serif;
   line-height: 1.6em;
   background-color: #c8cbb3;
+  padding-top: 1%;
 }
 
 .design-archives {
