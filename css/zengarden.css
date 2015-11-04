@@ -114,8 +114,8 @@ Preamble styles
 
 .preamble p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   color: #4e5850;
   max-width: 800px;
   margin: 0 auto;
@@ -208,8 +208,8 @@ Requirement styles
 .requirements p, .main footer a {
   color: #404741;
   font-family: 'Crimson Text', serif;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   max-width: 800px;
   margin: 0 auto 1.4em;
 }
