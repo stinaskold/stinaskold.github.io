@@ -324,9 +324,9 @@ Media queries
 *************************************************************/
 
 @media screen and (max-width: 1112px) {
+
   h1 {
     font-size: 7em;
-
   }
   .preamble {
     background-image: none;
@@ -335,7 +335,6 @@ Media queries
   .requirements {
     background-image: none;
   }
-
 
 }
 

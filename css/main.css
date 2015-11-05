@@ -22,7 +22,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+
 }
 
 h3, h4 {
@@ -38,7 +38,7 @@ p {
 article {
   background-image: url("../img/notebook.png");
   margin-bottom: 30px;
-  padding: 60px;
+  padding: 30px;
   -webkit-box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.67);
   -moz-box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.67);
   box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.67);
@@ -188,8 +188,37 @@ PAGE: ABOUT
 .profile-photo {
   display: block;
   max-width: 200px;
-  margin: 0 auto 30px;
+  margin: 0 30% 30px;
+  max-width: 100%;
 
+  border: 7px solid #FFF;
+
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+
+  -webkit-box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.4);
+  -moz-box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.4);
+  box-shadow: 5px 10px 20px -10px rgba(31,31,31,0.4);
+
+}
+
+.profile-photo:hover {
+
+  -webkit-transition: All .1s ease;
+  -moz-transition: All .1s ease;
+  -o-transition: All .1s ease;
+  transition: All .1s ease;
+
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+
+  -webkit-box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.4);
+  -moz-box-shadow: 0px 53px 26px -48px rgba(31,31,31,0.4);
+  box-shadow: -5px 10px 20px -10px rgba(31,31,31,0.4);
 }
 
 
@@ -274,4 +303,39 @@ a:hover {
 
 nav a {
   color: #2B2B2B;
+}
+
+/*h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+*/
+
+@media screen and (min-width: 720px) {
+
+  article {
+    padding: 60px;
+  }
+  .profile-photo {
+    margin: 0 70% 30px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 860px)  {
+
+  .profile-photo {
+    margin: 0 55% 30px;
+  }
 }
