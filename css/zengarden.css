@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|Crimson+Text:400,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700|PT+Serif:400,400italic,700,700italic);
 
 /*************************************************************
 Reset body margin and padding
@@ -75,13 +75,13 @@ h1 {
 h2 {
   color: #4e5850;
   text-align: center;
-  font-family: 'Crimson Text', serif;
+  font-family: 'PT Serif', serif;
   font-size: 4em;
   font-style: italic;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   word-spacing: 0.1em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 /*************************************************************
@@ -113,8 +113,8 @@ Preamble styles
 }
 
 .preamble p {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.1em;
+  font-family: 'PT Serif', serif;
+  font-size: 1.05em;
   line-height: 1.7em;
   color: #4e5850;
   max-width: 800px;
@@ -207,8 +207,8 @@ Requirement styles
 
 .requirements p, .main footer a {
   color: #404741;
-  font-family: 'Crimson Text', serif;
-  font-size: 1.1em;
+  font-family: 'PT Serif', serif;
+  font-size: 1.05em;
   line-height: 1.7em;
   max-width: 800px;
   margin: 0 auto 1.4em;
